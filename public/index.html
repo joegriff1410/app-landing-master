@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <title>Minimal App Landing Page Template</title>
+    <meta
+      name="description"
+      content="A fast, compliant, Cloud Run–ready landing page with Mailchimp signup, cookie consent, and perfect Lighthouse scores." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="https://app.example.com/" />
+    <meta property="og:title" content="Minimal App Landing Page Template" />
+    <meta
+      property="og:description"
+      content="A fast, compliant, Cloud Run–ready landing page with Mailchimp signup, cookie consent, and perfect Lighthouse scores." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://app.example.com/" />
+    <meta property="og:image" content="/assets/og-image.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/og-image.webp" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preload" href="/css/styles.css" as="style" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container row-between">
+        <a class="brand" href="/" aria-label="Home">
+          <img src="/assets/logo.svg" width="28" height="28" alt="Brand logo" />
+          <span class="brand-name sr-only">App Landing Template</span>
+        </a>
+        <nav aria-label="Primary">
+          <a class="btn-link" href="#signup">Join the Waitlist</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <!-- Hero -->
+      <section id="hero" class="section hero">
+        <div class="container center">
+          <h1 class="display">Clarity for Your Next App</h1>
+          <p class="subhead">
+            A minimal, fast, and compliant launch page you can rebrand in
+            minutes.
+          </p>
+          <a class="btn-primary" href="#signup" aria-describedby="cta-desc"
+            >Get Early Access</a
+          >
+          <p id="cta-desc" class="sr-only">Jump to the signup form.</p>
+
+          <!-- Optional supporting visual -->
+          <figure class="hero-visual">
+            <img
+              src="/assets/og-image.webp"
+              alt="Landing page preview"
+              width="1280"
+              height="720"
+              loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Screenshots carousel (no external JS; small progressive enhancement) -->
+      <section id="screens" class="section">
+        <div class="container">
+          <h2 class="h2">See the Interface</h2>
+          <div class="carousel" data-carousel>
+            <div class="carousel-track">
+              <figure class="shot">
+                <img
+                  src="/assets/screenshots/screen-1.webp"
+                  width="1200"
+                  height="675"
+                  alt="App dashboard preview"
+                  loading="lazy" />
+              </figure>
+              <figure class="shot">
+                <img
+                  src="/assets/screenshots/screen-2.webp"
+                  width="1200"
+                  height="675"
+                  alt="Feature cards preview"
+                  loading="lazy" />
+              </figure>
+              <figure class="shot">
+                <img
+                  src="/assets/screenshots/screen-3.webp"
+                  width="1200"
+                  height="675"
+                  alt="Signup form preview"
+                  loading="lazy" />
+              </figure>
+            </div>
+            <div class="carousel-controls">
+              <button
+                class="btn-icon"
+                data-prev
+                aria-label="Previous screenshot">
+                ‹
+              </button>
+              <button class="btn-icon" data-next aria-label="Next screenshot">
+                ›
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section id="benefits" class="section">
+        <div class="container">
+          <h2 class="h2">Why this template</h2>
+          <div class="cards">
+            <article class="card">
+              <img
+                class="icon"
+                src="/assets/icons/speed.svg"
+                width="28"
+                height="28"
+                alt="" />
+              <h3 class="h3">Lightning-fast</h3>
+              <p>
+                Clean HTML/CSS with zero frameworks for perfect Lighthouse
+                scores.
+              </p>
+            </article>
+            <article class="card">
+              <img
+                class="icon"
+                src="/assets/icons/shield.svg"
+                width="28"
+                height="28"
+                alt="" />
+              <h3 class="h3">Privacy-first</h3>
+              <p>GDPR-ready with no tracking before consent.</p>
+            </article>
+            <article class="card">
+              <img
+                class="icon"
+                src="/assets/icons/cloud.svg"
+                width="28"
+                height="28"
+                alt="" />
+              <h3 class="h3">Ready for Cloud Run</h3>
+              <p>
+                Ships with Nginx, security headers, and Dockerfile
+                preconfigured.
+              </p>
+            </article>
+            <article class="card">
+              <img
+                class="icon"
+                src="/assets/icons/palette.svg"
+                width="28"
+                height="28"
+                alt="" />
+              <h3 class="h3">Rebrand in minutes</h3>
+              <p>Tweak CSS variables to theme your next app.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- What to expect -->
+      <section id="features" class="section">
+        <div class="container">
+          <h2 class="h2">What to expect</h2>
+          <ul class="bullets">
+            <li>App screenshots gallery</li>
+            <li>Clear benefits section</li>
+            <li>Legally compliant privacy &amp; terms</li>
+            <li>Accessible forms with inline feedback</li>
+            <li>Cookie banner with strict consent</li>
+            <li>Future-ready analytics toggles</li>
+            <li>One CSS file, one tiny JS file</li>
+            <li>Instant deploy to Cloud Run</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Signup -->
+      <section id="signup" class="section signup">
+        <div class="container">
+          <h2 class="h2">Join the Waitlist</h2>
+          <p>Get updates and early access invites.</p>
+
+          <!-- Hidden iframe allows inline success message without navigation -->
+          <iframe
+            name="mc-embedded-subscribe"
+            class="sr-only"
+            title="Mailchimp submission"></iframe>
+
+          <form
+            id="mc-form"
+            class="mc-form"
+            method="post"
+            action="https://example.us1.list-manage.com/subscribe/post"
+            target="mc-embedded-subscribe"
+            novalidate>
+            <!-- Mailchimp required hidden inputs -->
+            <input type="hidden" name="u" value="YOUR_U_VALUE" />
+            <input type="hidden" name="id" value="YOUR_LIST_ID" />
+
+            <!-- Honeypot -->
+            <div aria-hidden="true" class="honeypot">
+              <label for="company">Company</label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                tabindex="-1"
+                autocomplete="off" />
+            </div>
+
+            <div class="form-row">
+              <label class="sr-only" for="mce-EMAIL">Email</label>
+              <input
+                id="mce-EMAIL"
+                name="EMAIL"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                required
+                placeholder="you@example.com"
+                aria-describedby="email-help" />
+              <span id="email-help" class="assistive"
+                >Enter a valid email address.</span
+              >
+              <label class="sr-only" for="mce-FNAME">First name</label>
+              <input
+                id="mce-FNAME"
+                name="FNAME"
+                type="text"
+                autocomplete="given-name"
+                placeholder="First name (optional)" />
+              <button class="btn-primary" type="submit">
+                Get Early Access
+              </button>
+            </div>
+
+            <fieldset class="consent">
+              <legend class="sr-only">Marketing consent</legend>
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  name="gdpr[marketing]"
+                  value="1"
+                  required />
+                <span
+                  >I agree to receive email updates about this product.</span
+                >
+              </label>
+            </fieldset>
+
+            <p class="form-note">
+              We respect your privacy. Unsubscribe anytime.
+            </p>
+
+            <div
+              id="mc-status"
+              role="status"
+              aria-live="polite"
+              class="status"
+              hidden></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container row-between">
+        <nav aria-label="Legal">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a href="/about">About</a>
+        </nav>
+        <p>© Your Company Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Cookie banner -->
+    <div
+      id="cookie-banner"
+      class="cookie-banner"
+      role="region"
+      aria-label="Cookie consent"
+      hidden>
+      <div class="container row-between">
+        <p>
+          We use essential cookies to operate this site. No tracking unless you
+          allow it.
+        </p>
+        <div class="btns">
+          <button class="btn-text" data-consent="reject">
+            Reject non-essential
+          </button>
+          <button class="btn-text" data-consent="manage">Manage</button>
+          <button class="btn-primary" data-consent="accept">Accept all</button>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="/js/app.js"></script>
+  </body>
+</html>
