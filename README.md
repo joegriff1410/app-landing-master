@@ -1,3 +1,4 @@
+
 # 📘 README
 
 App Landing Template (HTML/CSS • GDPR-ready • Cloud Run)
